@@ -1,0 +1,5 @@
+Scheduler component
+
+This component uses Airflow to deploy a Scheduler.
+
+To test run: docker-compose up
