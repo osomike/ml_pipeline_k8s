@@ -7,3 +7,5 @@ if __name__ == "__main__":
     data = load_json_file(json_path='./data.json')
 
     print(data)
+
+    return data
