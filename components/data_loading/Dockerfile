@@ -4,7 +4,7 @@ WORKDIR /app
 
 # Copy files
 COPY ./app/requirements.txt ./requirements.txt
-COPY ./app/load_data.py ./load_data.py
+COPY ./app/main.py ./main.py
 COPY ./app/load_data_lib.py ./load_data_lib.py
 COPY ./app/data.json ./data.json
 
@@ -14,6 +14,6 @@ RUN	apt-get install -y gcc vim
 RUN pip install -r ./requirements.txt
 
 # Only the last command will be executed
-CMD ["python", "load_data.py"]
+CMD ["python", "main.py"]
 # docker build . -t k8s_data_loading_docker
 # docker run k8s_data_loading_docker
