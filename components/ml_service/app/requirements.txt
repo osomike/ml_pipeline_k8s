@@ -1,0 +1,8 @@
+numpy==1.18.1
+pandas==0.25.3
+pydantic==1.4
+uvicorn==0.9.1
+scikit-learn==0.22.1
+xgboost==0.90
+fastapi==0.46.0
+requests==2.22.0
